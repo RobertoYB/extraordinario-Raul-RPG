@@ -19,7 +19,8 @@ namespace RPG_Raul
 
         public void SubirNivel()
         {
-
+            nivel = nivel + 1;
+            Console.WriteLine($"¡{nombre} ha subido al nivel {nivel}!");    
         }
 
         public void ObtenerHabilidadAprendida()
@@ -54,7 +55,7 @@ namespace RPG_Raul
         
         private void Morir()
         {
-
+            Console.WriteLine($"El viaje de {nombre} ha llegado a su fin. Fin del juego.");
         }
         
         public void CreacionDePersonaje()
