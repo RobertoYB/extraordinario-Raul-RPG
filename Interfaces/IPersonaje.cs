@@ -8,14 +8,33 @@ namespace RPG_Raul.Interfaces
 {
     public interface IPersonaje
     {
-        string nombre { get; set; }
-        int nivel { set; }
-        int ataque { set; }
-        int defensa { set; }
-        int vidaMaxima { set; }
-        int vidaActual { get; set; }
-        int manaMaximo { set; }
-        int manaActual { get; set; }
+        //Configuración de getters y setters
+        string nombre { get; }
+        int nivel { get; }
+        int ataque { get; }
+        int defensa { get; }
+        int vidaMaxima { get; }
+        int vidaActual { get; }
+        int manaMaximo { get; }
+        int manaActual { get; }
+
+
+        //Aqui van las funciones
+        void SubirNivel();
+        void ObtenerHabilidadAprendida();
+        void ObtenerHabilidadEquipada();
+        void EquiparHabilidad();
+        void DesequiparHabilidad();
+        void LanzarHabilidad();
+        void Examinar(); 
+        void Morir();
+        void CreacionDePersonaje();
+    }
+
+    public enum ClasePersonaje //Enumerador de clase de personaje
+    {
+        Guerrero,
+        Mago,
+        Ladron
     }
 }
-

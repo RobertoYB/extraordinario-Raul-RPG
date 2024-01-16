@@ -8,10 +8,17 @@ namespace RPG_Raul
 {
     public interface IHabilidad
     {
+        //Configuración de getters y setters
         string id { get; }
-        string nombre { get; set; }
-        int nivelRequerido { get; set; }
+        string nombre { get; }
+        int nivelRequerido { get; }
         int clase { get; }
-        int claseDelPersonajeAsociado { get; set; }
+        int claseDelPersonajeAsociado { get; }
+    }
+
+    public enum ClaseActivoPasivo   //Enumerador de clase activa/pasiva de habilidad
+    {
+        Activa,
+        Pasiva
     }
 }
